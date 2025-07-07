@@ -1,0 +1,20 @@
+.wp-block-image.is-style-polaroid {
+    padding: 15px 15px 70px 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 360px;
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease-in-out;
+
+    figure { margin: 0 !important; }
+    img { display: block; width: 100%; height: auto; }
+    figcaption {
+        position: absolute; bottom: 15px; left: 0; right: 0;
+        text-align: center; font-family: 'Permanent Marker', cursive;
+        color: #333; font-size: 18px;
+    }
+}
+
+.wp-block-image.is-style-polaroid.has-image-animation:hover {
+    transform: rotate(0deg) scale(1.05);
+}
